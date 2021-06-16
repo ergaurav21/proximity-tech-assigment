@@ -13,6 +13,8 @@ Technology Used
 8- Swagger for documentation
 9- Junit & Mockito for testing
 
+Refer to env/database.sql for database structure.
+
 To build application
 
 Prerequisite
@@ -38,6 +40,8 @@ Request Body :
 "username":"admin",
 "password": "admin"
 }
+
+
 
 
 #Improvements
