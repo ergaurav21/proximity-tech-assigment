@@ -27,8 +27,8 @@ services:
     restart: always
     environment:
       MYSQL_DATABASE: proximity-db
-      MYSQL_USER: root
-      MYSQL_PASSWORD: root
+      MYSQL_USER: test
+      MYSQL_PASSWORD: test
       MYSQL_ROOT_PASSWORD: root
     volumes:
       - db-data:/var/lib/mysql
