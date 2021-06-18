@@ -57,7 +57,7 @@ public class CourseServiceTest {
     // Given
     CourseRequest courseRequest = new CourseRequest();
     courseRequest.setCourseName(COURSE_NAME);
-    when(subjectRepository.findBySubjectName(any())).thenReturn(null);
+
 
     // When
     assertThatThrownBy(() -> courseService.create(courseRequest))
@@ -74,7 +74,6 @@ public class CourseServiceTest {
         courseRequest.setCourseName(COURSE_NAME);
         courseRequest.setSubjects(Set.of(subject));
 
-        when(subjectRepository.findBySubjectName(any())).thenReturn(null);
         when(courseRepository.findAllActiveByCourse(any())).thenReturn(course);
 
         // When
@@ -98,7 +97,7 @@ public class CourseServiceTest {
         // When
         assertThatThrownBy(() -> courseService.create(courseRequest))
                 // Then
-                .isInstanceOf(IllegalArgumentException.class)
+                .isInstanceOf(NotFoundException.class)
                 .hasMessage("Invalid Subject: "+subject);
     }
 

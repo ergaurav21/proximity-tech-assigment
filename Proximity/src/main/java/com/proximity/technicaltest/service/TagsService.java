@@ -1,15 +1,12 @@
 package com.proximity.technicaltest.service;
 
-import com.proximity.technicaltest.common.Utility;
 import com.proximity.technicaltest.entity.Tags;
-import com.proximity.technicaltest.entity.User;
 import com.proximity.technicaltest.exception.NotFoundException;
 import com.proximity.technicaltest.model.TagsModel;
 import com.proximity.technicaltest.model.TagsUpsertRequest;
 import com.proximity.technicaltest.repository.TagsRepository;
 import com.proximity.technicaltest.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

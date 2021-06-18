@@ -1,7 +1,6 @@
 package com.proximity.technicaltest.controller;
 
 import com.proximity.technicaltest.model.*;
-import com.proximity.technicaltest.service.SubjectService;
 import com.proximity.technicaltest.service.TagsService;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponses;

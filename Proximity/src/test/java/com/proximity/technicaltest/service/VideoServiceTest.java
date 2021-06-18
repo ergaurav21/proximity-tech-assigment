@@ -70,7 +70,7 @@ public class VideoServiceTest {
         videoRequest.setLessons(Set.of("hindi"));
 
         when(videoRepository.findAllActiveByTitle(any())).thenReturn(null);
-        when(lessonRepository.findAllActiveByTitle("test")).thenReturn(null);
+
 
         // When
         assertThatThrownBy(() -> videoService.create(videoRequest))
